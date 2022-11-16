@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Estilo.scss';
 class Header extends React.Component {
     constructor(props) {
         super(props);
@@ -14,7 +14,7 @@ class Header extends React.Component {
         return (
             <>
                 <h1>Minha cor favorita é {this.state.favoritecolor}</h1>
-                <button type="button" onClick={this.changeColor}>Mudar Cor</button>
+                <button className="txt" type="button" onClick={this.changeColor}>Mudar Cor</button>
             </>
         )
     }
